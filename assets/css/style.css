@@ -1,0 +1,240 @@
+/*.menu-header div{
+    position: relative;
+    top: 50px;
+}*/
+*{
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-image: url(../images/fon.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: 600;
+  font-size: 3rem;
+  border: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  transition: all 0.6s ease;
+  height: 80px;
+}
+.navbar a{
+  position: relative;
+  top: 30px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.9s ease;
+  display: inline-block;
+}
+.logo{
+  width: 180px;
+  height: 90px;
+  transition: all 0.8s ease;
+}
+.navbar div a:hover{
+  -ms-transform: rotate(9deg);
+  -webkit-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+.navbar-scroll{
+  background-color: rgba(255, 255, 255, 0.59);
+}
+.navbar-scroll a{
+  color: #555;
+}
+.navbar-scroll .logo{
+  position: absolute;
+  width: 140px;
+  height: 70px;
+  top: -50px;
+}
+.social-menu{
+  position: fixed;
+  top: 40%;
+  z-index: 8;
+}
+.social-menu li{
+  list-style: none;
+  margin: 5px 0;
+  transition: all 0.8s ease;
+}
+.social-menu ul li a{
+  text-decoration: none;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.social-menu ul li:hover{
+  -webkit-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -o-transform:scale(1.25);
+  transform:scale(1.25);
+}
+.social-menu ul li a:hover{
+  color: rgba(203, 238, 128, 0.82);
+}
+section{
+  position: relative;
+  padding-top: 130px;
+  /*top: 100px;*/
+}
+.menu-music{
+  position: fixed;
+  z-index: 3;
+  top: 30%;
+}
+h2{
+  color: #555;
+  font-weight: 600;
+}
+.section-noticias{
+  background-color: rgba(176, 190, 176, 0.74);
+}
+.container-noticia{
+  margin: 10px 0;
+  padding: 10px 0;
+  background-color: rgba(75, 75, 75, 0.43);
+  color: white;
+}
+.container-noticia+div{
+  margin: 10px 0;
+}
+.img-1,
+.img-2,
+.img-3:hover{
+  transition: all 0.4s ease ;
+}
+.section-music{
+  background-color: rgba(142, 171, 95, 0.73);
+  border-radius: 10px;
+}
+.lista a{
+  transition: all 0.6s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.lista a:hover{
+  background-color: rgba(154, 154, 154, 0.4);
+  height: 25px;
+  padding-left:  15px;
+  display: inline-block;
+  transition: all 0.8s ease;
+}
+.glyphicon-heart{
+  color: rgba(255, 51, 62, 0.76);
+  font-size: 1.8rem;
+  position: relative;
+  top: 4px;
+}
+.letra{
+  display: none;
+  background-color: #ffffff;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.letra p{
+  white-space: pre;
+}
+#slide{
+  padding: 10px 20px;;
+}
+.galeria-slide{
+  border-radius: 10px;
+  height: 720px;
+}
+#slide span{
+  opacity: 0;
+}
+.galeria-slide span:hover{
+  opacity: 1;
+}
+#concierto{
+  margin-top: 20px;
+}
+.section-concierto{
+  background-color: rgba(101, 119, 255, 0.64);
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.pic-concierto{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.pic-concierto img{
+  height: 190px;
+}
+.pic-concierto h5{
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  font-weight: 600;
+  z-index: 2;
+}
+.pic-concierto span{
+  position: absolute;
+  font-size: 4rem;
+  color: #ffffff;
+  top: 40px;
+  left: 70px;
+  font-weight: bold;
+  z-index: 2;
+}
+.div-img.hid {
+  overflow: hidden;
+}
+.div-img .img {
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.div-img .text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  display: block;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.div-img:hover .img {
+  transform: translate(0px, -100px);
+  -ms-transform: translate(0px, -100px);
+  -moz-transform: translate(0px, -100px);
+  -webkit-transform: translate(0px, -100px);
+  -o-transform: translate(0px, -100px);
+}
+.text a{
+  text-decoration: none;
+  color: #fff;
+}
+.section-contacto{
+  padding-top: 20px;
+  background-color: rgba(15, 208, 255, 0.64);
+}
+
+.footer{
+  margin-top: 20px;
+  bottom: 0;
+  position: relative;
+  background-color:rgb(102, 102, 102);
+  color: #ffffff;
+}
