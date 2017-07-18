@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/fonts/style.css">
 		<link rel="stylesheet" href="assets/css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	</head>
 	<body>
 		<nav class="navbar navbar-default" id="js-nav">
@@ -16,23 +16,23 @@
 							<a href="#" class=""><img src="assets/images/logo.png" alt="" class="logo"></a>
 						</div>
 						<div class="col-xs-2 m">
-							<a href="#">Somos</a>
+							<a href="#noticias" class="menu">Noticias</a>
 						</div>
 						<div class="col-xs-2">
-							<a href="#musica">Tu música</a>
+							<a href="#musica" class="menu">Tu música</a>
 						</div>
 						<div class="col-xs-2">
-							<a href="#">Nosotros</a>
+							<a href="#concierto" class="menu">Conciertos</a>
 						</div>
 						<div class="col-xs-2">
-							<a href="#">Contáctanos</a>
+							<a href="#contacto" class="menu">Contáctanos</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</nav>
 		<div class="menu-music ">
-			<audio id="audio" class="music hidden" controls>
+			<audio id="audio" class="music" controls>
         <source src="assets/audio/Ed Sheeran-Shape of You.mp3" id="music" type="audio/mp3">
       </audio>
 		</div>
@@ -46,7 +46,7 @@
 		</div>
 		<section>
 			<div class="container">
-			  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <div id="myCarousel" class="carousel slide carousel-height" data-ride="carousel">
 			    <ol class="carousel-indicators">
 			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			      <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -54,21 +54,21 @@
 			    </ol>
 			    <div class="carousel-inner">
 			      <div class="item active">
-			        <img src="assets/images/img1.jpg" alt="Los Angeles" style="width:100%;">
+			        <img src="assets/images/img1.jpg" alt="Los Angeles" class="img-responsive" style="width:100%;">
 			        <div class="carousel-caption">
 			          <h3>Ultra</h3>
 			          <p>LA is always so much fun!</p>
 			        </div>
 			      </div>
 			      <div class="item">
-			        <img src="assets/images/img2.jpg" alt="Chicago" style="width:100%;">
+			        <img src="assets/images/img2.jpg" alt="Chicago" class="img-responsive" style="width:100%;">
 			        <div class="carousel-caption">
-			          <h3>Chicago</h3>
-			          <p>Thank you, Chicago!</p>
+			          <h3>Tomorrow Land</h3>
+			          <p>Thank you, Brasil!</p>
 			        </div>
 			      </div>
 			      <div class="item">
-			        <img src="assets/images/img3.jpg" alt="New York" style="width:100%;">
+			        <img src="assets/images/img3.jpg" alt="New York" class="img-responsive" style="width:100%;">
 			        <div class="carousel-caption">
 			          <h3>New York</h3>
 			          <p>We love the Big Apple!</p>
@@ -135,48 +135,6 @@
 				</div>
 			</div>
 		</section>
-		<!-- <section>
-			<div class="container">
-			  <div class="panel-group" id="accordion">
-			    <div class="panel panel-default">
-			      <div class="panel-heading">
-			        <h4 class="panel-title">
-			          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
-			        </h4>
-			      </div>
-			      <div id="collapse1" class="panel-collapse collapse in">
-			        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-			        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-			      </div>
-			    </div>
-			    <div class="panel panel-default">
-			      <div class="panel-heading">
-			        <h4 class="panel-title">
-			          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
-			        </h4>
-			      </div>
-			      <div id="collapse2" class="panel-collapse collapse">
-			        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-			        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-			      </div>
-			    </div>
-			    <div class="panel panel-default">
-			      <div class="panel-heading">
-			        <h4 class="panel-title">
-			          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
-			        </h4>
-			      </div>
-			      <div id="collapse3" class="panel-collapse collapse">
-			        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-			        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-		</section> -->
 		<section id="musica">
 			<div class="container section-music">
 				<div class="row">
@@ -294,40 +252,36 @@
 						        <h4 class="modal-title">Modal Header</h4>
 						      </div>
 						      <div class="modal-body">
-										<p>ESTA ES LA GIRA SUDAMERICANA DEL ROAD TO ULTRA 2017</p>
-										<p>CON LOS MEJORES DJ'S DEL MOMENTO </p>
-										<p>AUSPICIDADO POR VASTION </p>
-										<center>
-										<table width="648" height="301" border="1">
-										  <tbody>
-										    <tr>
-										      <th width="80" scope="col">PAISES</th>
-										      <th width="265" scope="col">DJ'S</th>
-										      <th width="226" scope="col">FECHA/LUGAR</th>
-										    </tr>
-										    <tr>
-										      <td>PERU</td>
-										      <td>CARNAGE/ DASH BERLIN/ DEORRO/ JAUZ</td>
-										      <td>OCT7 / LIMA-EXPLANADA DE LA COSTA VERDE</td>
-										    </tr>
-										    <tr>
-										      <td height="65">CHILE</td>
-										      <td>CARNAGE/ DASH BERLIN/ DEORRO/ JAUZ</td>
-										      <td>OCT8 / SANTIAGO-MOVISTAR ARENA</td>
-										    </tr>
-										    <tr>
-										      <td height="62">BOLIVIA</td>
-										      <td>CARNAGE/ DASH BERLIN/ DEORRO/ JAUZ</td>
-										      <td>OCT14 / SANTA CRUZ-ESTADIO RAMON</td>
-										    </tr>
-										    <tr>
-										      <td>PARAGUAY</td>
-										      <td>CARNAGE/ DASH BERLIN/ DEORRO/ JAUZ</td>
-										      <td>OCT9 / LUGUE-GRAN AZUNCION RAKIURA</td>
-										    </tr>
-										  </tbody>
-										</table>
+										<p>5 SECONDS OF SUMMER</p>
+										<p>LIMA-PERÚ</p>
+										<p>NOVIEMBRE 16, 2017 </p>
 										</center>
+										<center>
+										<table width="553" border="1">
+											<tr>
+												<th width="100" scope="col"> SECTOR </th>
+												<th width="100" scope="col"> NORMAL A PARTIR DEL 22/09-9AM</th>
+												<th width="100" scope="col"> 15% Dscto. Interbank del 01/10 al 31/10 ****</th>
+											</tr>
+											  <tr>
+										    <td>CAMPO A</td>
+										    <td>s/. 429.30</td>
+										    <td>s/. 369.70</td>
+										        </tr>
+										        <tr>
+										    <td>CAMPO B</td>
+										    <td>s/. 247.30</td>
+										    <td>s/. 212.90</td>
+										        </tr>
+										        <tr>
+										    <td>TRIBUNA</td>
+										    <td>s/. 143.00</td>
+										    <td>s/. 123.20</td>
+										        </tr>
+										        <tr>
+										    <td colspan="3">***Pre Venta Interbank 15% Dscto: válido pagando con la tarjeta de crédito/ debito Interbank.Venta en todos los puntos Teleticket.</td>
+										        </tr>
+										</table>
 						      </div>
 						      <div class="modal-footer">
 						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -340,15 +294,60 @@
 							<h5 class="text-uppercase">5 seconds of summer</h5>
 							<span class="fecha">06 SEP</span>
 					    <div class="text">
-					    	<p>Precio de las entradas <a href="#">click aquí</a></p>
+					    	<p>Precio de las entradas <a href="#" data-toggle="modal" data-target="#Modal2">click aquí</a></p>
 					    </div>
 					  </div>
+						<div class="modal fade" id="Modal2" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						        <h4 class="modal-title">Modal Header</h4>
+						      </div>
+						      <div class="modal-body">
+										<p>5 SECONDS OF SUMMER</p>
+										<p>LIMA-PERÚ</p>
+										<p>NOVIEMBRE 16, 2017 </p>
+										</center>
+										<center>
+										<table width="553" border="1">
+											<tr>
+												<th width="100" scope="col"> SECTOR </th>
+												<th width="100" scope="col"> NORMAL A PARTIR DEL 22/09-9AM</th>
+												<th width="100" scope="col"> 15% Dscto. Interbank del 01/10 al 31/10 ****</th>
+											</tr>
+											  <tr>
+										    <td>CAMPO A</td>
+										    <td>s/. 429.30</td>
+										    <td>s/. 369.70</td>
+										        </tr>
+										        <tr>
+										    <td>CAMPO B</td>
+										    <td>s/. 247.30</td>
+										    <td>s/. 212.90</td>
+										        </tr>
+										        <tr>
+										    <td>TRIBUNA</td>
+										    <td>s/. 143.00</td>
+										    <td>s/. 123.20</td>
+										        </tr>
+										        <tr>
+										    <td colspan="3">***Pre Venta Interbank 15% Dscto: válido pagando con la tarjeta de crédito/ debito Interbank.Venta en todos los puntos Teleticket.</td>
+										        </tr>
+										</table>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
 						<div class="col-xs-3 div-img hid pic-concierto" >
 					    <img class="img" src="assets/images/concierto3.jpg" title="Foto9" alt="Foto9">
 							<h5 class="text-uppercase">one ok rock</h5>
-							<span class="fecha">27 SEPL</span>
+							<span class="fecha">27 SEP</span>
 					    <div class="text">
-					    	<p>Precio de las entradas <a href="#">click aquí</a></p>
+					    	<p>Precio de las entradas <a href="#" data-toggle="modal" data-target="#Modal1">click aquí</a></p>
 					    </div>
 					  </div>
 						<div class="col-xs-3 div-img hid pic-concierto" >
@@ -414,16 +413,19 @@
 						  </div>
 						</form>
 					</div>
+					<div class="col-xs-12 col-md-6">
+						<img src="assets/images/gmail.gif" alt="" class="img-responsive" style="width:60%;">
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="footer text-center">
+		<footer class="footer text-center">
 			<div class="container-fluid">
 				<div class="row">
-					<p>&copy; Created and designed by</p>
+					<p>&copy; Copyright 2017</p>
 				</div>
 			</div>
-		</section>
+		</footer>
 		<script type="text/javascript" scr="assets/js/jquery-3.2.1.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

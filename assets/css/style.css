@@ -5,7 +5,7 @@
 *{
   margin: 0 auto;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 body{
   background-image: url(../images/fon.jpg);
@@ -17,7 +17,7 @@ body{
 .navbar{
   background-color: rgba(255, 255, 255, 0);
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
   border: 0;
   position: fixed;
   width: 100%;
@@ -34,8 +34,8 @@ body{
   display: inline-block;
 }
 .logo{
-  width: 180px;
-  height: 90px;
+  width: 90px;
+  /*height: 90px;*/
   transition: all 0.8s ease;
 }
 .navbar div a:hover{
@@ -47,14 +47,17 @@ body{
   background-color: rgba(255, 255, 255, 0.59);
 }
 .navbar-scroll a{
-  color: #555;
+  color: #000;
 }
 .navbar-scroll .logo{
   position: absolute;
-  width: 140px;
+  width: 120px;
   height: 70px;
   top: -50px;
 }
+/*************************/
+
+/********/
 .social-menu{
   position: fixed;
   top: 40%;
@@ -92,10 +95,11 @@ section{
   top: 30%;
 }
 h2{
-  color: #555;
+  color: rgb(34, 34, 34);
   font-weight: 600;
 }
 .section-noticias{
+  padding-bottom: 20px;
   background-color: rgba(176, 190, 176, 0.74);
 }
 .container-noticia{
@@ -113,6 +117,7 @@ h2{
   transition: all 0.4s ease ;
 }
 .section-music{
+  padding-bottom: 10px;
   background-color: rgba(142, 171, 95, 0.73);
   border-radius: 10px;
 }
@@ -156,6 +161,8 @@ h2{
 .galeria-slide span:hover{
   opacity: 1;
 }
+
+
 #concierto{
   margin-top: 20px;
 }
@@ -227,7 +234,8 @@ h2{
   color: #fff;
 }
 .section-contacto{
-  padding-top: 20px;
+  border-radius: 10px;
+  padding-top: 30px;
   background-color: rgba(15, 208, 255, 0.64);
 }
 

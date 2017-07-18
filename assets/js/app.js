@@ -5,13 +5,13 @@ var song = document.getElementsByClassName("letra");
 boton[0].addEventListener("click", function () {
   reproductor.setAttribute("src","assets/audio/Despacito.mp3");
   audio.load();
-  song[0].style.display="block";
+  // song[0].style.display="block";
 })
 boton[1].addEventListener("click", function () {
   reproductor.setAttribute("src","assets/audio/Taylor.mp3");
   audio.load();
-  song[0].style.display="none";
-  song[1].style.display="block";
+  // song[0].style.display="none";
+  // song[1].style.display="block";
 })
 boton[2].addEventListener("click", function () {
   reproductor.setAttribute("src","assets/audio/Bonito.mp3");
@@ -54,3 +54,8 @@ for (var i = 0; i < heart.length; i++) {
     e.target.classList.toggle("glyphicon-heart");
   })
 }
+
+$('.menu').click(function(e){
+  e.preventDefault();
+  $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
+});
