@@ -2,28 +2,31 @@ var boton = document.getElementsByClassName("button");
 var reproductor = document.getElementById("music");
 var audio = document.getElementById("audio");
 var song = document.getElementsByClassName("letra");
-boton[0].addEventListener("click", function () {
-  reproductor.setAttribute("src","assets/audio/Despacito.mp3");
+
+var music = ["assets/audio/Despacito.mp3","assets/audio/Taylor.mp3", "assets/audio/Bonito.mp3", "assets/audio/Bruno Mars.mp3",
+            "assets/audio/Charlie Puth.mp3", "assets/audio/shapeofyou.mp3"];
+function playLoad(elemento) {
+  reproductor.setAttribute("src",elemento);
   audio.load();
-  // song[0].style.display="block";
+  audio.play();
+}
+boton[0].addEventListener("click", function () {
+  playLoad(music[0]);
 })
 boton[1].addEventListener("click", function () {
-  reproductor.setAttribute("src","assets/audio/Taylor.mp3");
-  audio.load();
-  // song[0].style.display="none";
-  // song[1].style.display="block";
+  playLoad(music[1]);
 })
 boton[2].addEventListener("click", function () {
-  reproductor.setAttribute("src","assets/audio/Bonito.mp3");
-  audio.load();
+  playLoad(music[2]);
 })
 boton[3].addEventListener("click", function () {
-  reproductor.setAttribute("src","assets/audio/Bruno Mars.mp3");
-  audio.load();
+  playLoad(music[3]);
 })
 boton[4].addEventListener("click", function () {
-  reproductor.setAttribute("src","assets/audio/Charlie Puth.mp3");
-  audio.load();
+  playLoad(music[4]);
+})
+boton[5].addEventListener("click", function () {
+  playLoad(music[5]);
 })
 var sonido = false;
 var btnPause = document.getElementsByClassName("pause");
